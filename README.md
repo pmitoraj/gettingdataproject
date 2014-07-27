@@ -1,9 +1,16 @@
-Main script is run_analysis.R. 
-In the same directory you need to have directory UCI HAR Dataset which
-is extraced from zip file available here: 
+Repository contasins following files:
+* README.md
+* run\_analysis.R - main script
+* Codebook.md - description of the data produced by run\_analysis.R
+* clean\_data.txt - output of the run\_analysis.rb
 
-listing all the related files, 
-instructions on how to use the script, 
-a general description of the raw data and it's source, 
-a description of what the script will do
-link to codebook
+After checking out the repository you should also download and unzip the dataset from:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+In your repository directory you should have now directory named UCI HAR Dataset 
+
+In R console you can simply `source('run_analysis.R')
+
+The script will merge the test and training data and filter out only columns that contain average or mean values.
+Then the data will be cleaned by displaying the mean of these values for each grouping of subject id and activity.
+
+The description of the fields can be found in the Codebook.

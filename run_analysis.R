@@ -51,3 +51,4 @@ Activity <- as.character(filtered_merged_data$Activity)
 Subject_ID <- as.character(filtered_merged_data$Subject_ID)
 clean_data <- aggregate(filtered_merged_data, by=list(Activity,Subject_ID), FUN=mean)
 
+write.table(clean_data,'../clean_data.txt')
