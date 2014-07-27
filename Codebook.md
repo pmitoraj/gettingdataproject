@@ -1,3 +1,5 @@
+These are the field names present in clean data. The first two columns are showing all the possible permutations of subject_id and Activity.
+The last two fields contain the Activity name and subject id.
  [1] "Group.1"                         "Group.2"                        
  [3] "tBodyAcc-mean()-X"               "tBodyAcc-mean()-Y"              
  [5] "tBodyAcc-mean()-Z"               "tBodyAcc-std()-X"               
